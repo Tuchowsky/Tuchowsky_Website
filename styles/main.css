@@ -30,10 +30,10 @@ body, html {
   top: 5vh;
   z-index: 10; }
 
-.menu > ul > li {
+.menu-box > ul > li {
   list-style-type: none; }
 
-.menu > ul > li > a {
+.menu-box > ul > li > a {
   color: #e2e2e8;
   text-decoration: none; }
 
