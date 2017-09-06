@@ -35,7 +35,12 @@ body, html {
 
 .menu-box > ul > li > a {
   color: #e2e2e8;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 1vw; }
+
+.menu-list {
+  margin-top: 8px;
+  display: none; }
 
 .brand-container {
   height: 100%;
