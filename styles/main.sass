@@ -65,9 +65,9 @@ body, html
     height: 55vh
 
 //menu button
-$menu-width: 6vw
+$menu-width: 5vw
 $menu-height: 3vw
-$menu-circle: 1vw
+$menu-circle-radius: 0.8vw
 $menu-line-color: white
 
 .menu-box
@@ -79,17 +79,17 @@ $menu-line-color: white
     background: none
 
 .line-back
-    margin-top: 1px
+    margin-top: 0
     width: $menu-width
-    height: 2px
+    height: 1px
     background: $menu-line-color
     
 .circle-back
-    width: $menu-circle
-    height: $menu-circle
+    width: $menu-circle-radius
+    height: $menu-circle-radius
     border-radius: 100%
     background: $menu-line-color
-    margin-top: (-$menu-circle/2)
+    margin-top: (-$menu-circle-radius/2)-0.04vw
     margin-left: $menu-width
 
   
