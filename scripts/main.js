@@ -23,6 +23,10 @@ $(document).ready(function(){
       });
     }
   });
+
+
+
+  
 });
 
 $(window).scroll(function () {
@@ -39,3 +43,33 @@ $(function() {
             e.preventDefault();
         });
 }); 
+
+//click on menu button - moving circles
+window.onload = function(){
+  var menu = document.querySelector('.menu-box');
+  var circleBack = document.querySelector('.circle-back');
+  var circleForward= document.querySelector('.circle-forward');
+
+  console.log(menu);
+
+  clickCount = 0;
+
+  menu.onclick = function(){
+    if (clickCount === 0){
+      circleBack.style.marginLeft = '0vw';
+      circleBack.style.WebkitTransition = 'all 2s';
+      circleForward.style.marginLeft = '3.7vw';
+      circleForward.style.WebkitTransition = 'all 2s';
+      clickCount++;
+    } else if (clickCount === 1){
+      circleBack.style.marginLeft = '3.7vw';
+      circleBack.style.WebkitTransition = 'all 2s';
+      circleForward.style.marginLeft = '0vw';
+      circleForward.style.WebkitTransition = 'all 2s';
+      clickCount--;
+    }
+  };
+};
+// $('.row').click(function() {
+//   alert('działa');
+// });
