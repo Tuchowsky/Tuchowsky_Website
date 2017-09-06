@@ -51,20 +51,33 @@ body, html {
   position: absolute;
   margin-top: 5vw;
   margin-left: 5vw;
-  width: 5vw;
+  width: 4.5vw;
   height: 3vw;
   background: none; }
 
 .line-back {
-  margin-top: 0;
-  width: 5vw;
+  width: 4.5vw;
   height: 1px;
-  background: white; }
+  background: #e2e2e8; }
 
 .circle-back {
   width: 0.8vw;
   height: 0.8vw;
   border-radius: 100%;
-  background: white;
+  background: #e2e2e8;
   margin-top: -0.44vw;
-  margin-left: 5vw; }
+  margin-left: 3.7vw; }
+
+.line-forward {
+  width: 4.5vw;
+  height: 1px;
+  background: #e2e2e8;
+  margin-top: 1.3vw; }
+
+.circle-forward {
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 100%;
+  background: #e2e2e8;
+  margin-top: -0.44vw;
+  margin-left: 0; }
