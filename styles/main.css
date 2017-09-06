@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  height: 100%;
+  background-color: white; }
+
+.container-fluid {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 100%;
+  height: 100%; }
+
+.home {
+  background-image: url("../gfx/background-tuchowsky-home.jpg"); }
+
+.about {
+  background-image: url("../gfx/background-tuchowsky-about.jpg"); }
+
+.music {
+  background-image: url("../gfx/background-tuchowsky-music.jpg"); }
+
+.contact {
+  background-image: url("../gfx/background-tuchowsky-contact.jpg"); }
+
+.menu {
+  position: fixed;
+  right: -15%;
+  top: 5vh;
+  z-index: 10; }
+
+.menu > ul > li {
+  list-style-type: none; }
+
+.menu > ul > li > a {
+  color: #e2e2e8;
+  text-decoration: none; }
+
+.brand-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.svgBrand {
+  width: 55vw;
+  height: 55vh; }
