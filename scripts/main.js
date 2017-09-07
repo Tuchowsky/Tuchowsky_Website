@@ -48,7 +48,7 @@ $(document).ready(function(){
     '<iframe width="150%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269566424&amp;color=%23c7beb9&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>'
 
 
-  ]
+  ];
 
   setTimeout(function(){
     for(var i = 0; i < tracklist.length; i++){
