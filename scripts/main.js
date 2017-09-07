@@ -40,6 +40,11 @@ $(document).ready(function(){
     $('.menu-list').slideDown(1000);
   });
 
+
+  setTimeout(function(){
+    $('.tracks-list').fadeIn(500);
+  }, 5000);
+
 });
 
 $(window).scroll(function () {
