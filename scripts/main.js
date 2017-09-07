@@ -40,10 +40,23 @@ $(document).ready(function(){
     $('.menu-list').slideDown(1000);
   });
 
+  var tracklist = [
+    '<iframe width="150%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331253335&amp;color=%23c7beb9&amp;inverse=true&amp;auto_play=false&amp;"></iframe>',
+    '<iframe width="150%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/286714403&amp;color=%23c7beb9&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>',
+    '<iframe width="150%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297325018&amp;color=%23c7beb9&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>',
+    '<iframe width="150%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/266022062&amp;color=%23c7beb9&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>',
+    '<iframe width="150%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269566424&amp;color=%23c7beb9&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>'
+
+
+  ]
 
   setTimeout(function(){
-    $('.tracks-list').fadeIn(500);
+    for(var i = 0; i < tracklist.length; i++){
+      $('<ul><li>' + tracklist[i] + '</li></ul>').appendTo('.tracks-list').fadeIn(500);
+    }  
   }, 5000);
+
+  
 
 });
 
