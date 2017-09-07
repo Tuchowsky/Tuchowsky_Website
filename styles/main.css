@@ -92,18 +92,21 @@ body, html {
   margin-left: 0; }
 
 .music-elements {
-  display: flex;
-  flex-direction: column; }
+  display: flex; }
 
 .round-player {
   display: flex;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   width: 20vw;
   height: 20vw;
   border-radius: 100%;
-  border: 1px solid #fff; }
+  border: 2px solid #fff; }
 
 .tracks-list {
+  box-sizing: border-box;
+  padding-top: 5vw;
   display: none;
   align-self: center;
   color: #e2e2e8; }
@@ -114,5 +117,12 @@ body, html {
   font-size: 1.5vw;
   margin-bottom: 0.5vw; }
 
-#track {
-  color: white; }
+.play-button {
+  width: 0;
+  height: 0;
+  border-top: 3.5vw solid transparent;
+  border-left: 6.5vw solid #e2e2e8;
+  border-bottom: 3.5vw solid transparent; }
+
+.play {
+  margin-left: 1.2vw; }
