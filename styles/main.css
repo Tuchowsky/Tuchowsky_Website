@@ -4,7 +4,8 @@
 
 body, html {
   height: 100%;
-  background-color: white; }
+  background-color: white;
+  font-family: 'Raleway', sans-serif; }
 
 .container-fluid {
   background-repeat: no-repeat;
