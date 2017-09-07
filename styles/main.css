@@ -20,11 +20,7 @@ body, html {
   background-image: url("../gfx/background-tuchowsky-about.jpg"); }
 
 .music {
-  background-image: url("../gfx/background-tuchowsky-music.jpg");
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-image: url("../gfx/background-tuchowsky-music.jpg"); }
 
 .contact {
   background-image: url("../gfx/background-tuchowsky-contact.jpg"); }
@@ -103,15 +99,15 @@ body, html {
   width: 20vw;
   height: 20vw;
   border-radius: 100%;
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  margin-top: 5vw; }
 
 .list {
   display: flex;
   justify-content: center; }
 
 .tracks-list {
-  padding-top: 5vw;
-  display: none; }
+  padding-top: 5vw; }
 
 .play-button {
   width: 0;
@@ -122,3 +118,15 @@ body, html {
 
 .play {
   margin-left: 1.2vw; }
+
+.contact-form {
+  box-sizing: border-box;
+  margin-top: 16vw;
+  color: #020816;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px; }
+
+.info {
+  height: 5vw;
+  font-size: 20px; }
