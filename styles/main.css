@@ -141,3 +141,21 @@ body, html {
 .info a {
   text-decoration: none;
   color: #020816; }
+
+.line-back-small {
+  width: 4.5vw;
+  height: 1px;
+  background: #e2e2e8; }
+
+.line-forward-small {
+  width: 4.5vw;
+  height: 1px;
+  background: #e2e2e8;
+  margin-top: 1.3vw; }
+
+.menu-box-small {
+  position: fixed;
+  margin-top: 4vw;
+  width: 4.5vw;
+  height: 3vw;
+  background: none; }
