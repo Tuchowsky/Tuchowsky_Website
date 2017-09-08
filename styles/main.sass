@@ -180,14 +180,44 @@ $menu-line-color: #e2e2e8
 
 .menu-box-small
     position: fixed
+    right: 10%
+    z-index: 10
     margin-top: 4vw
     width: $menu-width
     height: $menu-height
     background: none
 
+//Hidden Nav
+.overlay
+    height: 0
+    width: 100%
+    position: fixed
+    z-index: 1
+    left: 0
+    top: 0
+    background-color: rgb(0,0,0)
+    background-color: rgba(0,0,0, 0)
+    overflow-x: hidden
+    transition: 0.5s
 
+.overlay-content
+    position: relative
+    width: 100%
+    text-align: center
+    margin-top: 30px
+    
+.overlay-content > li
+    list-style-type: none
+    text-decoration: none
+    float: left
+    min-width: 20%
+    
 
-
+.overlay-content > li > a
+    color: $menu-font-color
+    
+.hidden-nav-overlay
+    margin-left: 10%
 
     
     
