@@ -51,15 +51,20 @@ $(document).ready(function(){
     }  
   }, 5000);
 
+
+
+
   var click = 0;
   $('.menu-small').click(function(){
     if (click === 0){
-      $('.line-forward-small').css({'transform':'rotate(22deg)', 'transform-origin':'100%', 'transition':'1s'});
-      $('.line-back-small').css({'transform':'rotate(-22deg)', 'transform-origin':'100%', 'transition':'1s'});
+      $('.line-forward-small').css({'transform':'rotate(22deg)', 'transform-origin':'100%', 'transition':'0.5s'});
+      $('.line-back-small').css({'transform':'rotate(-22deg)', 'transform-origin':'100%', 'transition':'0.5s'});
+      $('.hidden-nav').css({'height':'30%'});
       click++;
     } else if (click === 1){
-      $('.line-forward-small').css({'transform':'rotate(0)', 'transform-origin':'100%', 'transition':'1s'});
-      $('.line-back-small').css({'transform':'rotate(0)', 'transform-origin':'100%', 'transition':'1s'});
+      $('.line-forward-small').css({'transform':'rotate(0)', 'transform-origin':'100%', 'transition':'0.5s'});
+      $('.line-back-small').css({'transform':'rotate(0)', 'transform-origin':'100%', 'transition':'0.5s'});
+      $('.hidden-nav').css({'height':'0%'});
       click--;
     }
   });
