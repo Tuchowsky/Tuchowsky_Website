@@ -28,7 +28,7 @@ body, html {
 .menu {
   position: fixed;
   right: -15%;
-  top: 5vh;
+  top: 1vh;
   z-index: 10; }
 
 .menu-box > ul > li {
@@ -54,12 +54,15 @@ body, html {
   height: 55vh; }
 
 .menu-box {
-  position: absolute;
-  margin-top: 5vw;
-  margin-left: 5vw;
+  position: fixed;
+  margin-top: 4vw;
   width: 4.5vw;
   height: 3vw;
   background: none; }
+
+.menu-small {
+  display: flex;
+  justify-content: center; }
 
 .line-back {
   width: 4.5vw;
@@ -106,8 +109,9 @@ body, html {
   display: flex;
   justify-content: center; }
 
-.tracks-list > li {
-  height: 30px; }
+.tracks-list > ul {
+  height: 30px;
+  list-style-type: none; }
 
 .play-button {
   width: 0;
@@ -121,7 +125,7 @@ body, html {
 
 .contact-form {
   box-sizing: border-box;
-  margin-top: 16vw;
+  margin-top: 20vw;
   color: #020816;
   font-weight: bold;
   text-align: center;

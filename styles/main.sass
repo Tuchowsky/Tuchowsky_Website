@@ -46,7 +46,7 @@ body, html
 .menu
     position: fixed
     right: -15%
-    top: 5vh
+    top: 1vh
     z-index: 10
 
 .menu-box > ul > li
@@ -78,12 +78,16 @@ $menu-circle-radius: 0.8vw
 $menu-line-color: #e2e2e8
 
 .menu-box
-    position: absolute
-    margin-top: 5vw
-    margin-left: 5vw
+    position: fixed
+    margin-top: 4vw
     width: $menu-width
     height: $menu-height
     background: none
+
+.menu-small
+    display: flex
+    justify-content: center
+
 
 .line-back
     width: $menu-width
@@ -130,8 +134,9 @@ $menu-line-color: #e2e2e8
     display: flex
     justify-content: center
 
-.tracks-list > li
+.tracks-list > ul
     height: 30px
+    list-style-type: none
 
 .play-button
 	width: 0
@@ -145,7 +150,7 @@ $menu-line-color: #e2e2e8
 //contact 
 .contact-form
     box-sizing: border-box
-    margin-top: 16vw
+    margin-top: 20vw
     color: $contact-font-color
     font-weight: bold
     text-align: center
