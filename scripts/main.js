@@ -58,7 +58,7 @@ $(document).ready(function(){
       $('.circle-back-small').css({'display':'none'});
       $('.circle-forward-small').css({'display':'none'});
       $('.hidden-nav').css({'display':'block'}).slideDown('slow');
-      addSmallMenu()
+      addSmallMenu();
       click++;
     } else if (click === 1){
       $('.line-forward-small').css({'transform':'rotate(0)', 'transform-origin':'100%', 'transition':'0.5s'});
