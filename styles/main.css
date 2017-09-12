@@ -39,6 +39,9 @@ body, html {
   text-decoration: none;
   font-size: 1vw; }
 
+a:hover {
+  font-weight: bold; }
+
 .menu-list {
   margin-top: 15px;
   display: none; }
@@ -55,7 +58,7 @@ body, html {
 
 .menu-box {
   position: fixed;
-  margin-top: 4vw;
+  margin-top: 4.5vw;
   width: 4.5vw;
   height: 3vw;
   background: none; }
@@ -105,9 +108,8 @@ body, html {
   border: 2px solid #fff;
   margin-top: 5vw; }
 
-.list {
-  display: flex;
-  justify-content: center; }
+.music-tracklist {
+  margin-top: 65px; }
 
 .tracks-list > ul {
   height: 30px;
@@ -153,11 +155,28 @@ body, html {
   background: #e2e2e8;
   margin-top: 1.3vw; }
 
+.circle-forward-small {
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 100%;
+  background: #e2e2e8;
+  margin-top: -0.44vw;
+  margin-left: 0; }
+
+.circle-back-small {
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 100%;
+  background: #e2e2e8;
+  margin-top: -0.4vw;
+  z-index: 1;
+  margin-left: 3.7vw; }
+
 .menu-box-small {
   position: fixed;
-  right: 10%;
+  right: 9%;
   z-index: 10;
-  margin-top: 4vw;
+  margin-top: 5.5vw;
   width: 4.5vw;
   height: 3vw;
   background: none; }
@@ -169,9 +188,9 @@ body, html {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: black;
   background-color: transparent;
-  overflow-x: hidden;
+  height: 20%;
+  display: none;
   transition: 0.5s; }
 
 .overlay-content {
@@ -187,7 +206,48 @@ body, html {
   min-width: 20%; }
 
 .overlay-content > li > a {
-  color: #e2e2e8; }
+  color: #e2e2e8;
+  text-decoration: none; }
 
 .hidden-nav-overlay {
   margin-left: 10%; }
+
+.hidden-nav-overlay > ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  padding: 2px; }
+
+.bio-info {
+  margin-top: 60px;
+  color: #e2e2e8;
+  font-size: 13px;
+  max-height: 255px;
+  overflow-y: scroll; }
+
+.bio-photo {
+  margin-top: 60px;
+  margin-left: 5px;
+  background-image: url("../gfx/background-tuchowsky-about-bio.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  min-height: 25vw; }
+
+.bio-info::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: black; }
+
+.bio-info::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+#style-2::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: #D62929; }
+
+.biography {
+  width: 15vw; }
+
+.biography-circle {
+  margin-left: 0; }

@@ -12,6 +12,7 @@ $home-photo: url("../gfx/background-tuchowsky-home.jpg")
 $about-photo: url("../gfx/background-tuchowsky-about.jpg")
 $music-photo: url("../gfx/background-tuchowsky-music.jpg")
 $contact-photo: url("../gfx/background-tuchowsky-contact.jpg")
+$bio-photo: url("../gfx/background-tuchowsky-about-bio.jpg")
 
 
 *
@@ -43,6 +44,8 @@ body, html
 .contact
     background-image: $contact-photo
 
+
+
 .menu
     position: fixed
     right: -15%
@@ -56,6 +59,9 @@ body, html
     color: $menu-font-color
     text-decoration: none
     font-size: 1vw
+
+a:hover
+    font-weight: bold
 
 .menu-list
     margin-top: 15px
@@ -79,7 +85,7 @@ $menu-line-color: #e2e2e8
 
 .menu-box
     position: fixed
-    margin-top: 4vw
+    margin-top: 4.5vw
     width: $menu-width
     height: $menu-height
     background: none
@@ -130,9 +136,13 @@ $menu-line-color: #e2e2e8
     border-radius: 100%
     border: 2px solid #fff
     margin-top: 5vw
-.list
-    display: flex
-    justify-content: center
+
+.music-tracklist
+    margin-top: 65px
+
+//.list
+//     display: flex
+//     justify-content: center
 
 .tracks-list > ul
     height: 30px
@@ -178,11 +188,28 @@ $menu-line-color: #e2e2e8
     background: $menu-line-color
     margin-top: 1.3vw
 
+.circle-forward-small
+    width: $menu-circle-radius
+    height: $menu-circle-radius
+    border-radius: 100%
+    background: $menu-line-color
+    margin-top: (-$menu-circle-radius/2)-0.04vw
+    margin-left: 0
+
+.circle-back-small
+    width: $menu-circle-radius
+    height: $menu-circle-radius
+    border-radius: 100%
+    background: $menu-line-color
+    margin-top: -$menu-circle-radius/2
+    z-index: 1
+    margin-left: $menu-width - $menu-circle-radius
+
 .menu-box-small
     position: fixed
-    right: 10%
+    right: 9%
     z-index: 10
-    margin-top: 4vw
+    margin-top: 5.5vw
     width: $menu-width
     height: $menu-height
     background: none
@@ -195,9 +222,9 @@ $menu-line-color: #e2e2e8
     z-index: 1
     left: 0
     top: 0
-    background-color: rgb(0,0,0)
-    background-color: rgba(0,0,0, 0)
-    overflow-x: hidden
+    background-color: rgba(0, 0, 0, 0)
+    height: 20%
+    display: none
     transition: 0.5s
 
 .overlay-content
@@ -215,12 +242,57 @@ $menu-line-color: #e2e2e8
 
 .overlay-content > li > a
     color: $menu-font-color
+    text-decoration: none
+    
+    
     
 .hidden-nav-overlay
     margin-left: 10%
 
+.hidden-nav-overlay > ul > li:hover
+    background-color: rgba(0, 0, 0, 0.4)
+    border: solid 1px rgba(255, 255, 255, 0.3)
+    padding: 2px
+//about
+
+.bio-info
+    margin-top: 60px
+    color: $menu-font-color
+    font-size: 13px
+    max-height: 255px
+    overflow-y: scroll
+.bio-photo
+    margin-top: 60px
+    margin-left: 5px
+    background-image: $bio-photo
+    background-repeat: no-repeat
+    background-size: auto 100%
+    min-height: 25vw
     
     
+.bio-info::-webkit-scrollbar-track
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
+	border-radius: 5px
+	background-color: rgba(0,0,0,1)
+
+
+.bio-info::-webkit-scrollbar
+	width: 5px
+	background-color: rgba(0,0,0,0.2)
+
+#style-2::-webkit-scrollbar-thumb
+	border-radius: 5px
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
+	background-color: #D62929
+
+.biography
+    width: 15vw
+
+.biography-circle
+    margin-left: 0
+
+
+
     
     
   
