@@ -41,8 +41,6 @@ $(document).ready(function(){
     '<iframe width="150%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297325018&amp;color=%23c7beb9&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>',
     '<iframe width="150%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/266022062&amp;color=%23c7beb9&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>',
     '<iframe width="150%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269566424&amp;color=%23c7beb9&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>'
-
-
   ];
 
   setTimeout(function(){
@@ -52,19 +50,30 @@ $(document).ready(function(){
   }, 5000);
 
 
+  var menu = [
+    '<a href="#home">HOME</a>', '<a href="#about">ABOUT</a>', '<a href="#music">MUSIC</a>', '<a href="#contact">CONTACT</a>'
+  ];
 
 
   var click = 0;
   $('.menu-small').click(function(){
     if (click === 0){
-      $('.line-forward-small').css({'transform':'rotate(22deg)', 'transform-origin':'100%', 'transition':'0.5s'});
-      $('.line-back-small').css({'transform':'rotate(-22deg)', 'transform-origin':'100%', 'transition':'0.5s'});
-      $('.hidden-nav').css({'height':'30%'});
+      $('.line-forward-small').css({'transform':'rotate(18.5deg)', 'transform-origin':'100%', 'transition':'0.5s'});
+      $('.line-back-small').css({'transform':'rotate(-18.5deg)', 'transform-origin':'100%', 'transition':'0.5s'});
+      $('.circle-back-small').css({'display':'none'});
+      $('.circle-forward-small').css({'display':'none'});
+      $('.hidden-nav').css({'display':'block'}).slideDown('slow');
+      for(var i = 0; i < menu.length; i++){
+        $('<ul class="overlay-content"><li>' + menu[i] + '</li></ul>').appendTo('.hidden-nav-overlay');
+      }
       click++;
     } else if (click === 1){
       $('.line-forward-small').css({'transform':'rotate(0)', 'transform-origin':'100%', 'transition':'0.5s'});
       $('.line-back-small').css({'transform':'rotate(0)', 'transform-origin':'100%', 'transition':'0.5s'});
-      $('.hidden-nav').css({'height':'0%'});
+      $('.circle-back-small').css({'display':'block'}).fadeIn('slow');
+      $('.circle-forward-small').css({'display':'block'});
+      $('.hidden-nav').css({'display':'block'});
+      $('.overlay-content').remove();
       click--;
     }
   });
@@ -73,13 +82,15 @@ $(document).ready(function(){
 
 });
 
-// $(window).scroll(function () {
-//     var elem = $('.menu');
-//     setTimeout(function() {
-//         elem.css({"opacity":"1","transition":"1s"});
-//     },1000);        
-//         elem.css({"opacity":"0","transition":"0.5s"});    
-// });
+
+
+$(window).scroll(function () {
+    var elem = $('.menu');
+    setTimeout(function() {
+        elem.css({"opacity":"1","transition":"1s"});
+    },1000);        
+        elem.css({"opacity":"0","transition":"0.5s"});    
+});
 
 //right click on website
 // $(function() {
