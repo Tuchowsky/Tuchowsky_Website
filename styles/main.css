@@ -46,16 +46,6 @@ a:hover {
   margin-top: 15px;
   display: none; }
 
-.brand-container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.svgBrand {
-  width: 55vw;
-  height: 55vh; }
-
 .menu-box {
   position: fixed;
   margin-top: 4.5vw;
@@ -92,6 +82,51 @@ a:hover {
   border-radius: 100%;
   background: #e2e2e8;
   margin-top: -0.44vw;
+  margin-left: 0; }
+
+.brand-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.svgBrand {
+  width: 55vw;
+  height: 55vh; }
+
+.bio-info {
+  margin-top: 60px;
+  color: #e2e2e8;
+  font-size: 13px;
+  max-height: 255px;
+  overflow-y: scroll; }
+
+.bio-photo {
+  margin-top: 60px;
+  margin-left: 5px;
+  background-image: url("../gfx/background-tuchowsky-about-bio.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  min-height: 25vw; }
+
+.bio-info::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: black; }
+
+.bio-info::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+#style-2::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: #D62929; }
+
+.biography {
+  width: 15vw; }
+
+.biography-circle {
   margin-left: 0; }
 
 .music-elements {
@@ -216,38 +251,3 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   border: solid 1px rgba(255, 255, 255, 0.3);
   padding: 2px; }
-
-.bio-info {
-  margin-top: 60px;
-  color: #e2e2e8;
-  font-size: 13px;
-  max-height: 255px;
-  overflow-y: scroll; }
-
-.bio-photo {
-  margin-top: 60px;
-  margin-left: 5px;
-  background-image: url("../gfx/background-tuchowsky-about-bio.jpg");
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  min-height: 25vw; }
-
-.bio-info::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  background-color: black; }
-
-.bio-info::-webkit-scrollbar {
-  width: 5px;
-  background-color: rgba(0, 0, 0, 0.2); }
-
-#style-2::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
-  background-color: #D62929; }
-
-.biography {
-  width: 15vw; }
-
-.biography-circle {
-  margin-left: 0; }

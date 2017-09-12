@@ -1,5 +1,4 @@
 $body-color: white
-// $body-color: #0a1016
 $menu-font-color: #e2e2e8
 $contact-font-color: #020816
 
@@ -40,12 +39,9 @@ body, html
 .music
     background-image: $music-photo
   
-
 .contact
     background-image: $contact-photo
-
-
-
+//Main Menu
 .menu
     position: fixed
     right: -15%
@@ -66,18 +62,7 @@ a:hover
 .menu-list
     margin-top: 15px
     display: none
-
-.brand-container
-    height: 100%
-    display: flex
-    justify-content: center
-    align-items: center
-  
-.svgBrand
-    width: 55vw
-    height: 55vh
-
-//menu button
+//Menu Button
 $menu-width: 4.5vw
 $menu-height: 3vw
 $menu-circle-radius: 0.8vw
@@ -93,7 +78,6 @@ $menu-line-color: #e2e2e8
 .menu-small
     display: flex
     justify-content: center
-
 
 .line-back
     width: $menu-width
@@ -121,6 +105,52 @@ $menu-line-color: #e2e2e8
     background: $menu-line-color
     margin-top: (-$menu-circle-radius/2)-0.04vw
     margin-left: 0
+//Home Section
+.brand-container
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+  
+.svgBrand
+    width: 55vw
+    height: 55vh
+//About Section
+.bio-info
+    margin-top: 60px
+    color: $menu-font-color
+    font-size: 13px
+    max-height: 255px
+    overflow-y: scroll
+.bio-photo
+    margin-top: 60px
+    margin-left: 5px
+    background-image: $bio-photo
+    background-repeat: no-repeat
+    background-size: auto 100%
+    min-height: 25vw
+    
+    
+.bio-info::-webkit-scrollbar-track
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
+	border-radius: 5px
+	background-color: rgba(0,0,0,1)
+
+
+.bio-info::-webkit-scrollbar
+	width: 5px
+	background-color: rgba(0,0,0,0.2)
+
+#style-2::-webkit-scrollbar-thumb
+	border-radius: 5px
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
+	background-color: #D62929
+
+.biography
+    width: 15vw
+
+.biography-circle
+    margin-left: 0
 
 //Music Page Player
 .music-elements 
@@ -140,10 +170,6 @@ $menu-line-color: #e2e2e8
 .music-tracklist
     margin-top: 65px
 
-//.list
-//     display: flex
-//     justify-content: center
-
 .tracks-list > ul
     height: 30px
     list-style-type: none
@@ -157,7 +183,7 @@ $menu-line-color: #e2e2e8
 
 .play
     margin-left: 1.2vw
-//contact 
+//Contact Section
 .contact-form
     box-sizing: border-box
     margin-top: 20vw
@@ -176,7 +202,7 @@ $menu-line-color: #e2e2e8
 .info a
     text-decoration: none
     color: $contact-font-color
-
+//Small Menu
 .line-back-small
     width: $menu-width
     height: 1px
@@ -239,12 +265,9 @@ $menu-line-color: #e2e2e8
     float: left
     min-width: 20%
     
-
 .overlay-content > li > a
     color: $menu-font-color
     text-decoration: none
-    
-    
     
 .hidden-nav-overlay
     margin-left: 10%
@@ -253,43 +276,7 @@ $menu-line-color: #e2e2e8
     background-color: rgba(0, 0, 0, 0.4)
     border: solid 1px rgba(255, 255, 255, 0.3)
     padding: 2px
-//about
 
-.bio-info
-    margin-top: 60px
-    color: $menu-font-color
-    font-size: 13px
-    max-height: 255px
-    overflow-y: scroll
-.bio-photo
-    margin-top: 60px
-    margin-left: 5px
-    background-image: $bio-photo
-    background-repeat: no-repeat
-    background-size: auto 100%
-    min-height: 25vw
-    
-    
-.bio-info::-webkit-scrollbar-track
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
-	border-radius: 5px
-	background-color: rgba(0,0,0,1)
-
-
-.bio-info::-webkit-scrollbar
-	width: 5px
-	background-color: rgba(0,0,0,0.2)
-
-#style-2::-webkit-scrollbar-thumb
-	border-radius: 5px
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
-	background-color: #D62929
-
-.biography
-    width: 15vw
-
-.biography-circle
-    margin-left: 0
 
 
 
