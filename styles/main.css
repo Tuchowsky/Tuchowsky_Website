@@ -32,7 +32,14 @@ body, html {
   z-index: 10; }
 
 .menu-box > ul > li {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-top: 20px; }
+
+.menu-box > ul > li:nth-child(1) {
+  padding-bottom: 0px; }
+
+.menu-box > ul > li:nth-child(4) {
+  padding-bottom: 30px; }
 
 .menu-box > ul > li > a {
   color: #e2e2e8;
@@ -44,7 +51,8 @@ a:hover {
 
 .menu-list {
   margin-top: 15px;
-  display: none; }
+  display: none;
+  transition: width 1s; }
 
 .menu-box {
   position: fixed;
@@ -84,6 +92,63 @@ a:hover {
   margin-top: -0.44vw;
   margin-left: 0; }
 
+.line-under-container {
+  position: relative;
+  width: 4.5vw;
+  height: 1px; }
+
+.anim-line {
+  animation: increase-horizontal 2s;
+  animation-fill-mode: forwards; }
+
+.line-under {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: auto;
+  left: auto;
+  background: linear-gradient(to right, transparent, #e2e2e8); }
+
+@keyframes increase-horizontal {
+  0% {
+    width: 0px; }
+  100% {
+    width: 5vw; } }
+
+.line-under-rotate {
+  right: 0%;
+  transform-origin: 100%;
+  width: 4.5vw;
+  transition: 1.5s ease-in-out; }
+
+.anim-line-rot {
+  animation: increase-rotate 1.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes increase-rotate {
+  0% {
+    width: 0px; }
+  100% {
+    width: 4.5vw; } }
+
+.circle-under {
+  position: absolute;
+  top: -0.32vw;
+  right: -0.4vw;
+  width: 0.72vw;
+  height: 0.72vw;
+  border-radius: 50%;
+  background-color: #e2e2e8; }
+
+.rot-second {
+  transition-delay: 0.5s; }
+
+.rot-third {
+  transition-delay: 1s; }
+
+.rot-fourth {
+  transition-delay: 1.5s; }
+
 .brand-container {
   height: 100%;
   display: flex;
@@ -108,6 +173,11 @@ a:hover {
   background-repeat: no-repeat;
   background-size: auto 100%;
   min-height: 25vw; }
+
+.line-back-bio {
+  width: 4.5vw;
+  height: 1px;
+  background: #e2e2e8; }
 
 .bio-info::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
@@ -251,3 +321,16 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   border: solid 1px rgba(255, 255, 255, 0.3);
   padding: 2px; }
+
+.line-under-container-cont {
+  position: relative;
+  width: 70%;
+  height: 1px; }
+
+.line-under-contact {
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  top: auto;
+  left: 35%;
+  background: linear-gradient(to right, transparent, black); }
