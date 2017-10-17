@@ -19,7 +19,7 @@
                 @-webkit-keyframes draw{
                     from{
                     stroke-dashoffset: 500;
-                    fill: <green></green>;
+                    fill: black;
                     
 
                     }to{

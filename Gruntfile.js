@@ -5,10 +5,13 @@ module.exports = function(grunt){
 			options: {
 				livereload: true,
 			},
-
+            all: {
+                files: ['src/{,**/}*.*', 'styles/{,**/}*.*', 'scripts/{,**/}*.*'],
+                tasks: ['build']
+            },
 	  		sass: {
 				files: ['./styles/main.sass'],
-					tasks: ['sass'],
+				tasks: ['sass', 'build'],
             }
         },
         sass: {
