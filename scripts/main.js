@@ -80,10 +80,15 @@ $(document).ready(function(){
     });
   });
  
+  function clearTimer(){
+    clearTimeout();
+  }
+
   menuBox.mouseleave(function(){
     showMenuButton();
     rotateLine();
     underLineFade();
+    clearTimer();
   });
   
   $("a").on('click', function(event) {   
